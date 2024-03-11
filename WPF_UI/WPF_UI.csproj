@@ -16,4 +16,10 @@
       <ProjectReference Include="..\WPF_Library\WPF_Library.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <Content Include="PersonText.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
 </Project>

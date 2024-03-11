@@ -67,14 +67,25 @@
                 </Grid.ColumnDefinitions>
                 
                 <Label Content="Users" Grid.Row="0" Grid.Column="0" Margin="0,0,5,5" VerticalAlignment="Center"/>
-                <ComboBox Name="CmbUsers" Grid.Row="0" Grid.Column="1" Margin="0,0,0,5" VerticalAlignment="Center"/>
+                <ComboBox 
+                    Name="CmbUsers"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Margin="0,0,0,5"
+                    VerticalAlignment="Center"/>
                 
                 <Label Content="First Name" Grid.Row="1" Grid.Column="0" Margin="0,0,5,5" VerticalAlignment="Center"/>
                 <TextBox Name="TxtFirstName" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5" VerticalAlignment="Center"/>
                 <Label Content="Last Name" Grid.Row="2" Grid.Column="0" Margin="0,0,5,5" VerticalAlignment="Center"/>
                 <TextBox Name="TxtLastName" Grid.Row="2" Grid.Column="1" Margin="0,0,0,5" VerticalAlignment="Center"/>
                 
-                <Button Content="Add Person" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource ButtonStyle}" HorizontalAlignment="Stretch"/>
+                <Button 
+                    Content="Add Person"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource ButtonStyle}"
+                    HorizontalAlignment="Stretch" 
+                    Click="AddPersonButton_OnClick"/>
             </Grid>
         </GroupBox>
 

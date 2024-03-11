@@ -1,7 +1,8 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
 using Microsoft.Extensions.DependencyInjection;
+using WPF_Library.Abstractions;
+using WPF_Library.Models;
+using WPF_Library.Services;
 
 namespace WPF_UI;
 
@@ -37,6 +38,10 @@ public partial class App : Application
     {
         // Register the main window for dependency injection as a transient service
         services.AddTransient<MainWindow>();
+        services.AddSingleton<IDataAccess, DataAccess>();
+        services.AddSingleton<ICalculator, Calculator>();
+        services.AddSingleton<IModel, PersonModel>();
+        services.AddSingleton<IValidator, Validator>();
     }
 
     /// <summary>
