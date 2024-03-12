@@ -41,10 +41,22 @@
                 <TextBox Name="TxtSecondNumber" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5" VerticalAlignment="Center"/>
                 
                 <UniformGrid Rows="2" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5">
-                    <Button Content="Add" Style="{StaticResource ButtonStyle}" />
-                    <Button Content="Subtract" Style="{StaticResource ButtonStyle}" />
-                    <Button Content="Multiply" Style="{StaticResource ButtonStyle}" />
-                    <Button Content="Divide" Style="{StaticResource ButtonStyle}" />
+                    <Button 
+                        Content="Add"
+                        Style="{StaticResource ButtonStyle}"
+                        Click="AddButton_OnClick"/>
+                    <Button 
+                        Content="Subtract"
+                        Style="{StaticResource ButtonStyle}"
+                        Click="SubtractButton_OnClick"/>
+                    <Button 
+                        Content="Multiply"
+                        Style="{StaticResource ButtonStyle}"
+                        Click="MultiplyButton_OnClick"/>
+                    <Button 
+                        Content="Divide"
+                        Style="{StaticResource ButtonStyle}"
+                        Click="DivideButton_OnClick"/>
                 </UniformGrid>
                 
                 <Label Content="Results" Grid.Row="3" Grid.Column="0" Margin="0,5,5,0" VerticalAlignment="Center"/>
